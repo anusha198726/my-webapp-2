@@ -23,7 +23,7 @@ pipeline
                 sshagent(['tomcat-new']) 
                 {
     
-                  sh "
+                  sh"
                     scp -o StrictHostKeyChecking=no target/myweb.war  ubuntu@172.31.89.232:/var/lib/tomcat9/webapps/
                     
                   "
